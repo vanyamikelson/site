@@ -1,0 +1,170 @@
+.contact {
+  display: flex;
+  position: relative;
+}
+
+.contact_section {
+  display: flex;
+  width: 93%;
+  margin-top: 6rem;
+  z-index: 22;
+  background-color: #3E4249;
+  padding-bottom: 2rem;
+}
+
+.contact img .title {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+.contact_section_part {
+  padding-left: 1.2rem;
+}
+
+.contact_desc {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact_desc p {
+  padding-top: 2rem;
+  color: #C0DFB8;
+  width: 32rem;
+  font-size: 3rem;
+}
+
+.faq {
+  max-width: 300px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(2, 162, 167);
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question .ques_heading {
+  font-size: 1.8rem;
+  color: #f4f4f5;
+  margin-bottom: 0.4rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.2s ease;
+  border-left: 1px solid #ee6784;
+}
+
+.answer p {
+  padding-top: 0.7rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+.faq.active .answer {
+  max-height: 760px;
+  animation: fade 1s ease-in-out;
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.side-bg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2222;
+  padding-right: 0.5rem;
+}
+
+.answer-list {
+  margin-bottom: 1rem;
+}
+
+.anwer-heading {
+  color: #f4f4f5;
+  font-size: 0.9rem;
+}
+
+.anwer-p {
+  color: #C0DFB8;
+}
+
+.answer-lists {
+  padding: 1em;
+  padding-left: 2em;
+}
+
+.card--work-history {
+  padding: 1em;
+  margin-top: 2em;
+  padding-left: 2em;
+}
+
+.card--work-history .strong {
+  color: #e4e4e6;
+  font-size: 0.9rem;
+}
+
+.contact_section {
+  max-width: 2000px;
+}
+
+.card--work-history p {
+  color: #C0DFB8;
+}
+
+/* tablet */
+@media screen and (max-width: 61.1875rem) {
+  .side-bg {
+    display: none;
+  }
+  .contact_section {
+    width: 100%;
+  }
+  .contact_desc {
+    margin-left: 1.7rem;
+  }
+  .contact_desc p {
+    width: 23rem;
+  }
+}
+@media (max-width: 747px) {
+  .contact_section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact_desc {
+    margin-left: 1rem;
+  }
+  .contact_desc p {
+    font-size: 1.7rem;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

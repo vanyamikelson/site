@@ -1,0 +1,95 @@
+/* Web porfolio */
+.web__design {
+  margin-bottom: 8rem;
+  padding: 2rem;
+  background-color: #033738;
+  color: #e4e4e6;
+  font-size: 1.2rem;
+}
+
+.web__design ul li {
+  padding-bottom: 0.1rem;
+}
+
+.web__design_exp .heading {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: #f5ca75;
+}
+
+.web__design_exp {
+  padding: 1rem;
+}
+
+.web__showcase {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.web__design img {
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
+}
+
+.web__showcase__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 420px;
+  padding-bottom: 2rem;
+}
+
+.web__showcase__item img {
+  max-width: 400px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.web__showcase__item .sm {
+  width: 300px;
+  object-fit: contain;
+}
+
+.web__showcase__item button {
+  margin-top: 0.4rem;
+  width: 11rem;
+  border-radius: 0.1rem;
+  outline: none;
+  border: none;
+  background-color: #bf173b;
+  color: #f4f4f5;
+  font-size: 1.5rem;
+}
+
+/* mini desktop */
+@media screen and (max-width: 1400px) {
+  .web__design {
+    padding: 0;
+  }
+  .web__showcase {
+    flex-wrap: wrap;
+  }
+}
+/* tablet */
+@media screen and (max-width: 61.1875rem) {
+  .web__showcase__item img {
+    max-width: 355px;
+  }
+}
+/* mobile */
+@media screen and (max-width: 61.1875rem) {
+  .web__showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .web__showcase__item img {
+    max-width: 355px;
+  }
+}
+
+/*# sourceMappingURL=web.css.map */

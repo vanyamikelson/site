@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: unset;
+    color: unset;
+    font-family:  Helvetica, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: unset;
+
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --font-links:0.8125rem;
+    --white:#fff;
+    --color-1:#f44336; 
+}
+
+.header{
+
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,8,30,0.7)), url(../asset/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 120px;
+    display: block;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+
+}
+
+
+
+.nav-links ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding: .5rem 0.75rem;
+    position: relative;
+}
+
+.nav-links a{
+    color: white;
+    font-size: var(--font-links);
+    font-weight: bold;
+}
+
+.nav-links li::after{
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--color-1);
+    display: block;
+    margin: .4rem auto;
+    transition: 0.5s;
+}
+
+.nav-links li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 3.875rem;
+   
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    
+}
+
+.hero-btn{
+    display: inline-block;
+    color: var(--white);
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px var(--white) solid;
+}
+
+.close{
+    cursor: pointer;
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+
+.bars{
+    display: none; 
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    cursor: pointer;
+} 
+
+
+.hero-btn:hover{
+    border: 2px var(--color-1) solid;
+    background-color:var(--color-1) ;
+ 
+}
+
+/* ---------------------Course------------------------ */
+.course{
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    
+
+}
+
+.course h1{
+    font-size:3.25rem ;
+
+    font-weight: 600;
+}
+
+.course p{
+
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0.765625rem;
+}
+
+.row{
+    margin: auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding: 1em;
+}
+.row p {
+    line-height: 26px;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: var(--color-1);
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 2em 1em;
+    transition: .5s;
+
+}
+h3{
+    margin: 0.625rem 0;
+    font-weight: bold;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* -- ------------ campus ------------------ -- */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3.125rem;
+}
+
+h1{
+    font-size:3.25rem ;
+
+    font-weight: 600;
+}
+
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.layer:hover{
+    background: rgba(266, 0, 0, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.625rem;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* ----------------facilities--------------- */
+.facilities{
+   background-color: #b1463f; 
+  
+}
+
+.facilities .row{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.facilities-body{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top:100px ;
+    overflow-x: hidden;
+   
+}
+
+.facilities-col{
+    
+    flex-basis: 31%;
+    max-width: 330px;
+    border-radius: 10px;
+    margin-bottom:5% ;
+    text-align: left;
+    border: 2px white solid;
+    
+}
+.facilities-body h1{
+    color: rgb(255, 255, 255);
+    
+}
+
+.facilities-body p, .facilities-body h3{
+    padding-top: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.facilities img{
+    height: 12.5rem;
+    width: 100%;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.facilities-copy{
+    padding:.2rem .5rem 1rem;
+}
+
+/* ----------------testimonials------------------- */
+
+.testimonials{
+    
+    width: 60%;
+    margin: auto;
+    padding: 3.25rem;
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+.testimonials-col{
+  
+    display: flex;
+    flex-direction: row;
+   padding: 2rem;
+    align-items: center;
+    width: 800px;
+     border-radius: 10px;
+     margin: .2rem;
+    margin-bottom: 2%;
+    padding: .2rem;
+    cursor: pointer;
+    background: #fff3f3;
+    height: 200px;
+   
+ 
+
+}
+
+.testimonials-col p{
+    color: black;
+    text-align: left;
+    font-weight: lighter;
+    padding: .6rem;
+
+}
+ .testimonials h3{
+    color: black;
+    text-align: left;
+    padding: .6rem;
+    text-transform: uppercase;
+}
+
+.testimonials-col img{
+    margin-top: .5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+     object-fit: cover;
+     z-index: 2;
+}
+.testimonials .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-body{
+    padding: .5rem;
+}
+
+
+
+
+@media (max-width:700px) {
+
+   
+    .close{
+        display: block;
+    }
+    .text-box h1{
+        font-size: 2.2rem;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+    .bars{
+        display: block;
+    }
+    .nav-links{
+        height: 100vh;
+        position: absolute;
+        background: #b1463f;
+        height: 100vh;
+        width: 30vh;
+        padding: 1em;
+        top: 0;
+        right: -500px;
+        text-align: left;
+        z-index: 2;
+        transition: ease .5s;
+    }
+
+    .nav-links ul{
+        padding-top: 8rem;
+    }
+
+    .row{
+        flex-direction: column;
+        padding: 1em;
+        
+    }
+    .campus .row{
+        flex-direction: column;
+        padding: 2em;
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width:800px) {
+    .campus .row{
+        flex-direction: column;
+        padding: 2em;
+    }
+    .campus{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 3.125rem;
+    }
+}
+
+@media (max-width:950px) {
+    .facilities .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+}
+
+
+@media (max-width:1200px) {
+
+  
+    .testimonials{
+    
+        width: 100%;
+
+    }
+    .testimonials-col{
+     align-items: flex-start;
+        flex-direction: column; 
+        height: 100%;
+        width: 100%;
+    
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer > div{
+        margin: 1.7em 0 0 0;
+    }
+    
+}
+
+
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    max-height: 500px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(../asset/ken-theimer-PoE6Q48B-5k-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3rem 0;
+    overflow: hidden;
+
+}
+
+.cta h1{
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+
+footer{
+    padding: 1.7em; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+ }
+ 
+ 
+ footer p{
+     font-weight: 600;
+     margin: 0;
+ }
+ 
+ footer span{
+     color: var(--secondary-color);
+ }
+ 
+ footer > div:nth-child(3){
+     font-size: 1.2em;
+     margin: 0 0.5em;
+ }
+ 
+ hr{
+     width: 90%;
+     border: 1px rgb(156, 156, 156) solid;
+ }
